@@ -1,0 +1,19 @@
+keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        # rect.move_ip(-20, 0)
+        x -= velocity[0]
+    elif keys[pygame.K_RIGHT]:
+        # rect.move_ip(20, 0)
+        x += velocity[0]
+
+    if keys[pygame.K_UP]:
+        # rect.move_ip(0, -20)
+        y -= velocity[1]
+    elif keys[pygame.K_DOWN]:
+        # rect.move_ip(0, 20)
+        y += velocity[1]
+
+
+    # pygame.draw.rect(screen, WHITE, (10, 10, 50, 100), 2)
+    # pygame.draw.rect(screen, RED, rect, 0)
+    # pygame.draw.rect(screen, RED, (x, y, 30, 30))
